@@ -34,6 +34,12 @@ main {
   padding: 20px;
 }
 
+#hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e0e0e0;
+}
+
 #gallery {
   text-align: center;
   padding: 20px;
