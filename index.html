@@ -8,31 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- This comment was added by The Sentinel -->
     <header>
-        <h1>Welcome to My Enhanced Webpage</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h2>Main Content Section</h2>
-            <p>This is the main content of the webpage. It's been enhanced with more structure and content.</p>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery-container">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
         </section>
-        <aside>
-            <h3>Side Content</h3>
-            <p>This is some content in an aside element.</p>
-        </aside>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                 <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+             </form>
+         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 The Sentinel</p>
     </footer>
