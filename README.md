@@ -1,5 +1,6 @@
 
 
+
 # ASI Project 🚀
 
 ## Overview
@@ -41,3 +42,31 @@ This project is designed to automate various tasks using a combination of Python
 ### Installation
 
 To get started, clone the repository and install the required dependencies:
+
+
+## Additional Information
+
+- **GitHub Username:** yourusername
+- **Repository URL:** https://github.com/yourusername/ASI.git
+- **Description:** This is a sample project for demonstrating file operations and Git workflow.
+
+## Usage
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/ASI.git
+   cd ASI
+   ```
+
+2. Run the project:
+   ```sh
+   python main.py
+   ```
+
+## Contributing
+
+Feel free to contribute by opening issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
