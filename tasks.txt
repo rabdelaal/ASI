@@ -71,3 +71,6 @@ Would you like to proceed with these tasks?
 Retry task - **Check for GitHub Credentials in `.env` File**
    - Navigate to the parent directory and read the `.env` file to extract GitHub credentials.
 Context: 1. can you provide the correct path to the child directory?
+Retry task - **Check if the Repository is Up-to-Date**
+   - Use Git commands to check if the local repository is up-to-date with the remote repository.
+Context: would you like to proceed with removing the secrets from the commits or allowing them via the url? also, do you want to add and commit the `tasks.txt` file?
