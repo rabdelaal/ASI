@@ -719,3 +719,17 @@ This project is designed to [briefly describe the project's purpose and goals]. 
 - Feature 3: [Description of feature 3]
 
 ## Getting Started 🏁
+Retry task - **Improve README.md with More Information and Emojis**
+   - Open the `README.md` file.
+   - Add more detailed information and relevant emojis to enhance readability and engagement.
+Context: could you please provide the correct path to the repository and confirm the location of the `readme.md` file?
+Retry task - Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+Context: could you please provide the correct path to the project directory and confirm that the `requirements.txt` file is present? additionally, ensure that the `.env` file contains the necessary `github_token`.
+Retry task - Clone the repository:
+   ```bash
+   git clone [repository URL]
+   ```
+Context: 1. can you provide the correct repository url?
