@@ -70,3 +70,4 @@ This project is designed to automate various tasks using Python and PowerShell. 
 **Check for GitHub Info in `.env` File**
    - Navigate to the parent directory and read the `.env` file.
    - Extract any GitHub-related information.
+**Check the Commit and Push**: Verify that the changes were committed and pushed successfully.
