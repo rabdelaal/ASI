@@ -33,3 +33,37 @@ Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTIN
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+## Additional Information 📚
+
+- **Project Description**: A brief description of the project.
+- **Features**:
+  - Feature 1 🚀
+  - Feature 2 🛠️
+  - Feature 3 📊
+
+## Usage 🛠️
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the project:
+   ```bash
+   python main.py
+   ```
+
+## Contributing 🤝
+
+Feel free to contribute to this project by opening issues or pull requests. 🙌
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
