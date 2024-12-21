@@ -1582,3 +1582,106 @@ Retry task - Retry task - **Test the Workflow**: Trigger a new commit or pull re
 Let me know if you need further assistance or if there are any issues!
 Context: 1. can you provide the correct remote repository url?
 Context: could you please provide the correct remote repository url? additionally, i will check the `.env` file for github credentials and ensure that any pending changes are committed and pushed. once the url is provided, i can proceed with the workflow testing.
+Retry task - Retry task - **Configure and Test GitHub Actions Workflow**
+   - Ensure the `.github/workflows` directory exists.
+   - Create or update the necessary workflow files.
+   - Test the workflow to ensure it works correctly.
+
+### Step-by-Step Execution
+
+#### 1. Check for GitHub Credentials in `.env` File
+
+```python
+import os
+
+def check_github_credentials(env_file_path):
+    if not os.path.exists(env_file_path):
+        print(f"File {env_file_path} does not exist.")
+        return False
+
+    with open(env_file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+
+    if 'GITHUB_USERNAME' in content and 'GITHUB_TOKEN' in content:
+        print("GitHub credentials found in the .env file.")
+        return True
+    else:
+        print("GitHub credentials not found in the .env file.")
+        return False
+
+env_file_path = '../.env'
+check_github_credentials(env_file_path)
+```
+
+#### 2. Commit and Push Pending Changes
+
+```powershell
+# Navigate to the repository directory
+cd ..\your-repo-directory
+
+# Check for pending changes
+git status
+
+# Add all changes
+git add .
+
+# Commit changes with a default message
+git commit -m "Commit pending changes"
+
+# Push changes to the remote repository
+git push origin main
+```
+
+#### 3. Configure and Test GitHub Actions Workflow
+
+```python
+import os
+
+def configure_github_actions(workflow_dir):
+    if not os.path.exists(workflow_dir):
+        os.makedirs(workflow_dir)
+        print(f"Directory {workflow_dir} created.")
+
+    workflow_file_path = os.path.join(workflow_dir, 'main.yml')
+    workflow_content = """
+    name: CI
+
+    on:
+      push:
+        branches:
+          - main
+      pull_request:
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - name: Set up Python
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.8
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+        - name: Run tests
+          run: pytest
+    """
+
+    with open(workflow_file_path, 'w', encoding='utf-8') as file:
+        file.write(workflow_content)
+
+    print(f"Workflow file {workflow_file_path} configured.")
+
+workflow_dir = '.github\\workflows'
+configure_github_actions(workflow_dir)
+```
+
+### Follow-Up
+Context: - what is the correct path to the repository directory?
+Context: could you please provide the correct path to the repository directory? this is necessary to navigate to the correct location and perform the required operations.
+Retry task - Retry task - **Verify the `.env` File**: Ensure that the `.env` file contains the necessary GitHub credentials.
+Context: **
+Context: can you please provide the `github_token` so i can update the `.env` file and retry the git operations?
