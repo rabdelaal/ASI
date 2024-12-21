@@ -75,3 +75,6 @@ This project is designed to automate various tasks using Python and PowerShell. 
    - Check for any pending changes in the local repository.
    - Commit the changes with a default message.
    - Push the changes to the remote repository.
+Retry task - **Check for GitHub Credentials in `.env` File**
+   - Read the `.env` file to check if it contains GitHub credentials.
+Context: 1. can you confirm the correct remote repository url and ensure you have the necessary access rights?
