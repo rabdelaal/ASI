@@ -1,2 +1,18 @@
 **Navigate Back to the Current Directory**
    - Return to the original directory after reading the `.env` file.
+**Check for GitHub Credentials in `../.env` File**
+   - Read the `.env` file located in the parent directory.
+   - Extract any GitHub-related credentials.
+**Follow-Up Actions**
+   - If any issues arise during the process, address them.
+   - Ensure that the repository remains in a consistent state after removing the commits with secrets.
+   - Provide a final status report to the user.
+
+### Final Status Report
+
+```powershell
+# Final status report
+git status
+```
+
+This will provide a summary of the current state of the repository after the operations.
