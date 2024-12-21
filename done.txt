@@ -71,3 +71,7 @@ This project is designed to automate various tasks using Python and PowerShell. 
    - Navigate to the parent directory and read the `.env` file.
    - Extract any GitHub-related information.
 **Check the Commit and Push**: Verify that the changes were committed and pushed successfully.
+**Commit and Push Pending Changes**
+   - Check for any pending changes in the local repository.
+   - Commit the changes with a default message.
+   - Push the changes to the remote repository.
