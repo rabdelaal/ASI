@@ -1,0 +1,2 @@
+**Navigate Back to the Current Directory**
+   - Return to the original directory after reading the `.env` file.
