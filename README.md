@@ -108,3 +108,9 @@ To get started with this project, follow these steps:
    ```
 
 For more detailed information, refer to the documentation.
+
+## GitHub Information
+- Username: example_user
+- Repository: example_repo
+- Contributions: 100
+- Followers: 50
